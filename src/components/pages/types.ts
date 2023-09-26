@@ -1,15 +1,15 @@
-import About from "./about";
-import Resume from "./resume";
+import Home from "./home";
+import Register from "./register";
 import PageNotFound from "./pagenotfound";
 
 export {
-  About,
-  Resume,
+  Home,
+  Register,
   PageNotFound,
 };
 
 export enum SelectedPage {
-  About = "/reactts/about",
-  Resume = "/reactts/resume",
+  Home = "/reactts/home",
+  Register = "/reactts/registration",
   PageNotFound = "404",
 };
