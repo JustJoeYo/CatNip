@@ -1,6 +1,6 @@
 import userIcon from '../../assets/person.png'
 import passwordIcon from '../../assets/password.png'
-import React, { Component } from 'react'
+import { Component } from 'react'
 import * as Yup from 'yup';
 import AuthService from "../../services/auth.service";
 import { Formik, Field, Form, ErrorMessage } from "formik";
@@ -120,7 +120,7 @@ class Login extends Component<Props, State> {
                   <ErrorMessage
                   name="username"
                   component="div"
-                  className="alert alert-danger"
+                  className="alert alert-danger text-text-color"
                   />
                 </div>
       
@@ -130,7 +130,7 @@ class Login extends Component<Props, State> {
                   <ErrorMessage
                   name="password"
                   component="div"
-                  className="alert alert-danger"
+                  className="alert alert-danger text-text-color"
                   />
                 </div>
       
@@ -149,7 +149,7 @@ class Login extends Component<Props, State> {
             </div>
             {message && (
                 <div className="form-group">
-                  <div className="alert alert-danger" role="alert">
+                  <div className="alert alert-danger text-text-color" role="alert">
                     {message}
                   </div>
                 </div>

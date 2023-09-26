@@ -1,7 +1,7 @@
 import userIcon from '../../assets/person.png'
 import emailIcon from '../../assets/email.png'
 import passwordIcon from '../../assets/password.png'
-import React, { Component } from 'react'
+import { Component } from 'react'
 import * as Yup from 'yup';
 import AuthService from '../../services/auth.service'
 import { Formik, Field, Form, ErrorMessage } from "formik";
