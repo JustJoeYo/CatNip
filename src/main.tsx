@@ -6,7 +6,7 @@ import { useState } from "react";
 import Navbar from './components/navigationbar/navbar';
 import Particles from './components/particles/Particles';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import { Home, Register, PageNotFound, SelectedPage} from "./components/pages/types";
+import { Home, Login, Register, PageNotFound, SelectedPage} from "./components/pages/types";
 
 const router = createBrowserRouter([
   {
@@ -17,8 +17,12 @@ const router = createBrowserRouter([
           element: <Home />,
         },
         {
+          path: "/Project-Website/signup",
+          element: <Register/>,
+        },
+        {
           path: "/Project-Website/login",
-          element: <Register />,
+          element: <Login/>,
         },
         {
           path: "/Project-Website/*",

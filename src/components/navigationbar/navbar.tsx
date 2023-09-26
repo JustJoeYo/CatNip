@@ -14,6 +14,9 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
           <ul className="text-sm font-semibold leading-6 text-text-color h-fit w-22 rounded-md px-5 py-1.5 shadow-sm hover:bg-indigo-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-700">
           <Link page="Login" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
           </ul>
+          <ul className="text-sm font-semibold leading-6 text-text-color h-fit w-22 rounded-md px-5 py-1.5 shadow-sm hover:bg-indigo-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-700">
+          <Link page="Sign Up" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+          </ul>
         </div>
       </nav>
     </header>
