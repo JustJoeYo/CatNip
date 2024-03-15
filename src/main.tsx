@@ -10,22 +10,22 @@ import { Home, Login, Register, PageNotFound, SelectedPage} from "./components/p
 
 const router = createBrowserRouter([
   {
-    path: "/Project-Website/",
+    path: "/CatNip/",
     children: [
         {
-          path: "/Project-Website/",
+          path: "/CatNip/Home",
           element: <Home />,
         },
         {
-          path: "/Project-Website/signup",
+          path: "/CatNip/signup",
           element: <Register/>,
         },
         {
-          path: "/Project-Website/login",
+          path: "/CatNip/login",
           element: <Login/>,
         },
         {
-          path: "/Project-Website/*",
+          path: "/CatNip/*",
           element: <PageNotFound />,
         },
     ]
