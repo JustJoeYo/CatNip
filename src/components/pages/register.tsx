@@ -60,7 +60,6 @@ class register extends Component<Props, State> {
 
   handleRegister(formValue: { username: string; email: string; password: string }) {
     const { username, email, password } = formValue;
-
     this.setState({
       message: "",
       successful: false
